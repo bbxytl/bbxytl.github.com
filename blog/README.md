@@ -1,4 +1,4 @@
-[**GitHub博客**](https://github.com/bbxytl/bbxytl.github.com/tree/master/blog)
+[Home](http://bbxytl.github.io) / [**GitHub博客**](https://github.com/bbxytl/bbxytl.github.com/tree/master/blog)
 =================
 
 #**目录**
