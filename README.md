@@ -1,4 +1,4 @@
-[**Home**](http://bbxytl.github.io) / 
+[**Home**](http://bbxytl.github.io) /   
 [**Welcome to My GitHub Blog**](https://github.com/bbxytl/bbxytl.github.com/tree/master/blog)
 =================
 #Introduction
