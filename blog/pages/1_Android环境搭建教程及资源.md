@@ -12,19 +12,20 @@
 
 ##**下载及安装说明：**
 ---
-1. 下载最新JDK：
-![](./images/blog_1/1_JDK_DownLoad.png)
-设置环境变量步骤：
-```
-我的电脑->属性->高级->环境变量->系统变量中添加以下环境变量：
-JAVA_HOME值为： D:\Program Files\Java\jdk1.6.0_18（你安装JDK的目录）
-CLASSPATH值为：.;%JAVA_HOME%\lib\tools.jar;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\bin;
-Path:  在开始追加 %JAVA_HOME%\bin;
-```
-检查JDK是否安装成功。打开cmd窗口，输入java –version 查看JDK的版本信息。出现类似下面的画面表示安装成功了：
-![](./images/blog_1/1_JDK_Path.png)
+1. 下载最新JDK：   
+![](./images/blog_1/1_JDK_DownLoad.png)   
 
-2. 下载最新**Eclipse**,解压之后即可使用。
+    - 设置环境变量步骤：
+    ```
+    我的电脑->属性->高级->环境变量->系统变量中添加以下环境变量：
+    JAVA_HOME值为： D:\Program Files\Java\jdk1.6.0_18（你安装JDK的目录）
+    CLASSPATH值为：.;%JAVA_HOME%\lib\tools.jar;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\bin;
+    Path:  在开始追加 %JAVA_HOME%\bin;
+    ```
+    - 检查JDK是否安装成功。打开cmd窗口，输入java –version 查看JDK的版本信息。出现类似下面的画面表示安装成功了：   
+    ![](./images/blog_1/1_JDK_Path.png)
+
+2. 下载最新**Eclipse**,解压之后即可使用。   
 ![](./images/blog_1/1_Eclipse_DownLoad.png)
 
 3. 下载**Android SDK**：
@@ -39,8 +40,9 @@ Path:  在开始追加 %JAVA_HOME%\bin;
     ```
     Force http://... sources to be fetched using http://...
     ```
-    - 其他默认，如图：
-    ![](./images/blog_1/1_Android_SDK_Manager_Settings.png)
+    - 其他默认，如图：   
+    ![](./images/blog_1/1_Android_SDK_Manager_Settings.png)   
+
     - 要经过很长的时间，下载好后在系统变量中Path值后添加：
     ```
     D:\API\Android\android-sdk-windows\tools;
