@@ -11,7 +11,7 @@ Android环境搭建---待续
 ##**下载及安装说明：**
 ---
 1. 下载最新JDK：
-![](/images/blog/1_JDK_DownLoad.png)
+![](./images/blog_1/1_JDK_DownLoad.png)
 设置环境变量步骤：
 ```
 我的电脑->属性->高级->环境变量->系统变量中添加以下环境变量：
@@ -20,10 +20,10 @@ CLASSPATH值为：.;%JAVA_HOME%\lib\tools.jar;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%
 Path:  在开始追加 %JAVA_HOME%\bin;
 ```
 检查JDK是否安装成功。打开cmd窗口，输入java –version 查看JDK的版本信息。出现类似下面的画面表示安装成功了：
-![](/images/blog/1_JDK_Path.png)
+![](./images/blog_1/1_JDK_Path.png)
 
 2. 下载最新**Eclipse**,解压之后即可使用。
-![](/images/blog/1_Eclipse_DownLoad.png)
+![](./images/blog_1/1_Eclipse_DownLoad.png)
 
 3. 下载**Android SDK**：
     - 运行**SDK Manager.exe**选择要下载的包，进行更新。由于默认情况下，google的域名被墙了，所以可能下载不下来。因此要使用镜像的方式。这里使用“大连东软信息学院镜像服务器地址”：
@@ -38,14 +38,14 @@ Path:  在开始追加 %JAVA_HOME%\bin;
     Force http://... sources to be fetched using http://...
     ```
     - 其他默认，如图：
-    ![](/images/blog/1_Android_SDK_Manager_Settings.png)
+    ![](./images/blog_1/1_Android_SDK_Manager_Settings.png)
     - 要经过很长的时间，下载好后在系统变量中Path值后添加：
     ```
     D:\API\Android\android-sdk-windows\tools;
     ```
     - 最后，重启计算机，进入cmd命令窗口，检查SDK是不是安装成功。
     - 运行 `android –h` 如果有类似以下的输出，表明安装成功：
-    ![](/images/blog/1_Android_Path.png)
+    ![](./images/blog_1/1_Android_Path.png)
 
 4. Eclipse ADT 安装
     - 打开 Eclipse IDE，进入菜单中的 Help -->  Install New Software
