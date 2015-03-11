@@ -11,7 +11,7 @@ Android环境搭建---待续
 ##**下载及安装说明：**
 ---
 1. 下载最新JDK：
-![](/images/1_JDK_DownLoad.png)
+![](/images/blog/1_JDK_DownLoad.png)
 设置环境变量步骤：
 ```
 我的电脑->属性->高级->环境变量->系统变量中添加以下环境变量：
