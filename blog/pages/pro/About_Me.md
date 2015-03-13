@@ -12,7 +12,7 @@
     - <http://www.cnblogs.com/lomper/>
     - <http://bbxytl.github.io/>
 - 期望职位：C++开发工程师
-- 期望城市：广州、深圳
+- 期望城市：(广东)广州、深圳
 
 
 ##项目经验
