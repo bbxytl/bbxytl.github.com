@@ -3,4 +3,4 @@
 =================
 #Introduction
 This is my second github blog.
-#[About me](https://github.com/bbxytl/bbxytl.github.com/tree/master/blog/pages/pro)
+#[About me](https://github.com/bbxytl/bbxytl.github.com/tree/master/blog/pages/pro/README.md#githubblog)

@@ -1,4 +1,4 @@
-[**GitHub博客**](https://github.com/bbxytl/bbxytl.github.com/tree/master/blog)
+[**GitHubBlog**](https://github.com/bbxytl/bbxytl.github.com/tree/master/blog/README.md#home--githubblog)
 =================
 
 #**About Me**
