@@ -1,4 +1,4 @@
-[Home](http://bbxytl.github.io) / [**GitHubBlog**](https://github.com/bbxytl/bbxytl.github.com/tree/master/blog/README.md)
+[Home](http://bbxytl.github.io) / [**GitHubBlog**](https://github.com/bbxytl/bbxytl.github.com/tree/master/blog/README.md#home--githubblog)
 =================
 
 #**目录**
