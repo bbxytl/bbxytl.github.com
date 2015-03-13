@@ -1,4 +1,4 @@
-[**GitHub博客**](https://github.com/bbxytl/bbxytl.github.com/tree/master/blog) /
+[**GitHubBlog**](https://github.com/bbxytl/bbxytl.github.com/tree/master/blog#home--githubblog) /
 =====
 
 ##[**Android环境搭建教程及资源**](https://github.com/bbxytl/bbxytl.github.com/blob/master/blog/pages/1_Android%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%E5%8F%8A%E8%B5%84%E6%BA%90.md)
