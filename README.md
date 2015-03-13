@@ -1,5 +1,5 @@
 [**Home**](http://bbxytl.github.io) /   
-[**Welcome to My GitHub Blog**](https://github.com/bbxytl/bbxytl.github.com/tree/master/blog)
+[**Welcome to My GitHub Blog**](https://github.com/bbxytl/bbxytl.github.com/tree/master/blog/README.md)
 =================
 #Introduction
 This is my second github blog.
