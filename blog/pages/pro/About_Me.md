@@ -6,7 +6,7 @@
 - Email: bbxytl@OutLook.com
 
 ##个人简介
-- bbxytl / 男
+- bbxytl · 男
 - 硕士·广东工业大学·计算机学院·2013级·软件工程（2016届毕业生）
 - 技术博客（GitHub）：  
     - **<http://www.cnblogs.com/lomper/>**  
