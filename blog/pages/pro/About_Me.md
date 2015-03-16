@@ -2,16 +2,16 @@
 #**About Me**
 ---
 ##联系方式
-- 手机： 1881946XXXX
+- 手机： (请使用邮箱联系，谢谢)
 - Email: bbxytl@OutLook.com
 
 ##个人简介
 - bbxytl / 男
 - 硕士·广东工业大学·计算机学院·2013级·软件工程（2016届毕业生）
 - 技术博客（GitHub）：  
-    - <http://www.cnblogs.com/lomper/>  
-    - <http://bbxytl.github.io/>  
-- 期望职位：C++开发工程师  
+    - **<http://www.cnblogs.com/lomper/>**  
+    - **<http://bbxytl.github.io/>**
+- 期望职位：**Qt、C/C++开发工程师**  
 - 期望城市：(广东)广州、深圳  
 
 
