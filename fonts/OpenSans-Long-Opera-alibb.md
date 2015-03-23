@@ -3,7 +3,7 @@
 ---
 ##联系方式
 - **手机： 188-1946-2887**
-- **Email: save.long@qq.com**
+- **Email: bbxytl@OutLook.com**
 
 ##个人简介
 - 田龙 · 男
@@ -12,7 +12,6 @@
   - **<http://www.cnblogs.com/lomper/>**  
   - **<http://bbxytl.github.io/>**
 - 期望职位：**研发工程师**  
-- 期望城市：(广东)广州、深圳
 
 ##项目经验及实习经验
 ###1. 广州市殷雷软件有限公司
