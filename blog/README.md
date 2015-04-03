@@ -6,6 +6,7 @@
 2. [**《山洞里的大师 第一卷 唤醒你的力量》**](https://github.com/bbxytl/TheMasterInMountainCave#githubblog--themasterinmountaincave)
 2. [**使用位操作符求素数**](https://github.com/bbxytl/Lean_Demos/tree/master/GetPrimes#githubblog) 
 3. [**Android环境搭建教程及资源**](./pages/1_Android环境搭建教程及资源.md#githubblog-) 
+4. [**C++学习之引用**](./pages/2_C++学习之引用.md#githubblog-)
 
 ##**友链**
 [博客园-Blog](http://www.cnblogs.com/lomper/)
