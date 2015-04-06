@@ -9,6 +9,7 @@
 4. [**C++学习之引用**](./pages/2_C++学习之引用.md#githubblog-)
 
 ##**友链**
-[**博客园-Blog**](http://www.cnblogs.com/lomper/)
-**关注微信订阅号**：
-![](./pages/images/qrcodes/qrcode_100.jpg)
+- [**博客园-Blog**](http://www.cnblogs.com/lomper/)
+- **关注微信订阅号**：
+
+	![](./pages/images/qrcodes/qrcode_100.jpg)
