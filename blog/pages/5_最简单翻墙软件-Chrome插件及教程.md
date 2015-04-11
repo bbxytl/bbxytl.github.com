@@ -1,6 +1,6 @@
 [**GitHubBlog**](https://github.com/bbxytl/bbxytl.github.com/tree/master/blog#home--githubblog) /
 =====
-#[最简单**翻墙软件** Chrome插件及教程](https://github.com/bbxytl/bbxytl.github.com/blob/master/blog/pages/4_最简单翻墙软件-Chrome插件及教程.md#githubblog-)
+#[最简单**翻墙软件** Chrome插件及教程](https://github.com/bbxytl/bbxytl.github.com/blob/master/blog/pages/5_最简单翻墙软件-Chrome插件及教程.md#githubblog-)
 
 - 这里介绍的是一款Chrome的插件：**红杏**，由于正常情况下无法登陆谷歌浏览器的应用商店下载这个插件，所以这里提供一个下载链接，按照以下教程安装后即可。红杏使用的是邀请制，下载链接下是邀请链接。
 - 在后面，为证实可用，我贴了几个比较出名的网站的截屏。
