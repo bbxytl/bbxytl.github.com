@@ -1,8 +1,8 @@
 [**GitHubBlog**](https://github.com/bbxytl/bbxytl.github.com/tree/master/blog#home--githubblog) /
 =====
 
-#[**C++学习之引用**](https://github.com/bbxytl/bbxytl.github.com/blob/master/blog/pages/2_C++学习之引用.md#githubblog-)
-----
+##[**C++学习之引用**](https://github.com/bbxytl/bbxytl.github.com/blob/master/blog/pages/2_C++学习之引用.md#githubblog-)
+
 ##1. 引用的定义及意义
 ###a. 引用的定义
 引用必须初始化。因为引用一经定义，它就不能再指向其他对象了，所以需要进行初始化。
