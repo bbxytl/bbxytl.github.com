@@ -11,7 +11,7 @@
 - 添加语法高亮
 
 ##1. 添加中文输入支持
-- 这个在上一篇博文中已经解决掉了，主要是因为我用的输入法是搜狗（fcitx），具体解决方案参照：[Ubuntu下Qt（Retex）无法输入中文](./3_Ubuntu下Qt（Retex）无法输入中文.md)
+- 这个在上一篇博文中已经解决掉了，主要是因为我用的输入法是搜狗（fcitx），具体解决方案参照：[Ubuntu下Qt（Retex）无法输入中文](./3_Ubuntu下Qt（Retex）无法输入中文.md#githubblog-)
 
 ##2. 添加自定义CSS
 - 在网上找了一段时间，没找到，我其实是希望使用github的markdownCSS，但没找到，突然想起我在Windows平台下使用的MarkDownPro2里貌似有这个CSS，于是果断找到markdownPro2的css存放目录：

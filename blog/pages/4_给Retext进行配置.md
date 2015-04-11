@@ -1,6 +1,6 @@
 [**GitHubBlog**](https://github.com/bbxytl/bbxytl.github.com/tree/master/blog#home--githubblog) /
 =====
-#[**给Retext进行配置**](https://github.com/bbxytl/bbxytl.github.com/blob/master/blog/pages/4_给Retext进行配置.md#githubblog-)
+#[**给Retext进行配置：语法高亮、数学公式、自定义样式**](https://github.com/bbxytl/bbxytl.github.com/blob/master/blog/pages/4_给Retext进行配置.md#githubblog-)
 ----
 
 由于转到了Ubuntu下，本来在Windows平台下使用的一直是MarkdownPro2，而且进行了破解，十分好用。转到Ubuntu下后，MarkdownPro2不能够使用了，找了下Linux平台中的ReText算是比较好用的（也测试了一下CuteMarkEd，但感觉不如ReText）。只是，刚安装好的ReText是不算好用的，这里记录一下我的配置路：

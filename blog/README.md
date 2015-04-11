@@ -8,7 +8,7 @@
 3. [**Android环境搭建教程及资源**](./pages/1_Android环境搭建教程及资源.md#githubblog-) 
 4. [**C++学习之引用**](./pages/2_C++学习之引用.md#githubblog-)
 5. [**Ubuntu下Qt（Retex）无法输入中文**](./pages/3_Ubuntu下Qt（Retex）无法输入中文.md#githubblog-) 
-6. [**给 Retext 进行配置**](./pages/4_给Retext进行配置.md#githubblog-)
+6. [**给Retext进行配置：语法高亮、数学公式、自定义样式**](./pages/4_给Retext进行配置.md#githubblog-)
 
 ##**友链**
 - [**博客园-Blog**](http://www.cnblogs.com/lomper/)
