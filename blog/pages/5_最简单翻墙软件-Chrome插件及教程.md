@@ -27,7 +27,7 @@
 - **youtube**
 	![](./images/blog_5/youtube.png)
 
-###**还等什么，感觉试试吧！**
+###**还等什么，赶紧试试吧！**
 [**下载红杏离线包**](http://honx.in/i/VSkoq4kWGhjEC7Co)  
 <http://honx.in/i/VSkoq4kWGhjEC7Co>
 
