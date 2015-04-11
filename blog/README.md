@@ -4,11 +4,12 @@
 #**目录**
 1. [**LeetCodesOJ【持续更新中】**](https://github.com/bbxytl/LeetCodesOJ/blob/master/README.md#githubblog--leetcodesoj)
 2. [**《山洞里的大师 第一卷 唤醒你的力量》**](https://github.com/bbxytl/TheMasterInMountainCave#githubblog--themasterinmountaincave)
-2. [**使用位操作符求素数**](https://github.com/bbxytl/Lean_Demos/tree/master/GetPrimes#githubblog) 
-3. [**Android环境搭建教程及资源**](./pages/1_Android环境搭建教程及资源.md#githubblog-) 
-4. [**C++学习之引用**](./pages/2_C++学习之引用.md#githubblog-)
-5. [**Ubuntu下Qt（Retex）无法输入中文**](./pages/3_Ubuntu下Qt（Retex）无法输入中文.md#githubblog-) 
-6. [**给Retext进行配置：语法高亮、数学公式、自定义样式**](./pages/4_给Retext进行配置.md#githubblog-)
+3. [**使用位操作符求素数**](https://github.com/bbxytl/Lean_Demos/tree/master/GetPrimes#githubblog) 
+4. [**Android环境搭建教程及资源**](./pages/1_Android环境搭建教程及资源.md#githubblog-) 
+5. [**C++学习之引用**](./pages/2_C++学习之引用.md#githubblog-)
+6. [**Ubuntu下Qt（Retex）无法输入中文**](./pages/3_Ubuntu下Qt（Retex）无法输入中文.md#githubblog-) 
+7. [**给Retext进行配置：语法高亮、数学公式、自定义样式**](./pages/4_给Retext进行配置.md#githubblog-)
+8. [**Chrome翻墙插件及教程**](./pages/5_最简单翻墙软件-Chrome插件及教程.md#githubblog-)
 
 ##**友链**
 - [**博客园-Blog**](http://www.cnblogs.com/lomper/)
