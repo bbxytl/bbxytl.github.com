@@ -10,7 +10,7 @@
 6. [**Ubuntu下Qt（Retex）无法输入中文**](./pages/3_Ubuntu下Qt（Retex）无法输入中文.md#githubblog-) 
 7. [**给Retext进行配置：语法高亮、数学公式、自定义样式**](./pages/4_给Retext进行配置.md#githubblog-)
 8. [**Chrome翻墙插件及教程**](./pages/5_最简单翻墙软件-Chrome插件及教程.md#githubblog-)
-9. [**数字转字符串和字符串转数字**](https://github.com/bbxytl/Lean_Demos/Int_String_Convert/数字转字符串和字符串转数字.md#githubblog-)
+9. [**数字(int)转字符串和字符串转数字(int)**](https://github.com/bbxytl/Lean_Demos/tree/master/Int_String_Convert/数字转字符串和字符串转数字.md#githubblog-)
 
 ##**友链**
 - [**博客园-Blog**](http://www.cnblogs.com/lomper/)
