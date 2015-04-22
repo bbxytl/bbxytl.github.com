@@ -12,7 +12,7 @@
 8. [**Chrome翻墙插件及教程**](./pages/5_最简单翻墙软件-Chrome插件及教程.md#githubblog-)
 9. [**数字(int)转字符串和字符串转数字(int)**](https://github.com/bbxytl/Lean_Demos/tree/master/Int_String_Convert/数字转字符串和字符串转数字.md#githubblog-)
 10. [**STL容器及算法题：删除奇数的QQ号**](https://github.com/bbxytl/Lean_Demos/tree/master/QQ_Delete_STL/STL容器及算法题：删除奇数的QQ号.md#githubblog-)
-11. [**C++Primer学习笔记（一）**](h./pages/6_C++Primer学习笔记（一）.md#githubblog-)
+11. [**C++Primer学习笔记（一）**](./pages/6_C++Primer学习笔记（一）.md#githubblog-)
 12. [**Linux脚本学习笔记（一）**](./pages/7_Linux脚本学习笔记（一）.md#githubblog-)
 
 ##**友链**
