@@ -14,7 +14,7 @@
 10. [**STL容器及算法题：删除奇数的QQ号**](https://github.com/bbxytl/Lean_Demos/tree/master/QQ_Delete_STL/STL容器及算法题：删除奇数的QQ号.md#githubblog-)
 11. [**C++Primer学习笔记（一）**](./pages/6_C++Primer学习笔记（一）.md#githubblog-)
 12. [**Linux脚本学习笔记（一）**](./pages/7_Linux脚本学习笔记（一）.md#githubblog-)
-
+13. [**C++Primer学习笔记（二）**](./pages/8_C++Primer学习笔记（二）.md#githubblog-)
 ##**友链**
 - [**博客园-Blog**](http://www.cnblogs.com/lomper/)
 - **关注微信订阅号：LomperWay**：     
