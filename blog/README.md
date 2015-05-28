@@ -15,7 +15,7 @@
 11. [**C++Primer学习笔记（一）**](./pages/6_C++Primer学习笔记（一）.md#githubblog-)
 12. [**Linux脚本学习笔记（一）**](./pages/7_Linux脚本学习笔记（一）.md#githubblog-)
 13. [**C++Primer学习笔记（二）**](./pages/8_C++Primer学习笔记（二）.md#githubblog-)
-14. [**解决Ubuntu开机无法启动的问题**](./pages/9_解决挂载ntfs失败时启动不了Ubuntu的情况.md#githubblog-)
+14. [**解决挂载ntfs失败时启动不了Ubuntu的情况**](./pages/9_解决挂载ntfs失败时启动不了Ubuntu的情况.md#githubblog-)
 
 
 ##**友链**
