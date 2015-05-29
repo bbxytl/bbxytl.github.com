@@ -1,7 +1,7 @@
 [**GitHubBlog**](https://github.com/bbxytl/bbxytl.github.com/tree/master/blog#home--githubblog) /
 =====
 #[C++Primer学习笔记（二）](https://github.com/bbxytl/bbxytl.github.com/blob/master/blog/pages/8_C++Primer学习笔记（二）.md#githubblog-)
-
+---
 - **虚函数**:因为直到运行时才能知道到底调用了哪个版本的虚函数，所以所有虚函数都必须有定义，而不管它是否被用到，这是因为连编译器也无法确定到底会使用哪个虚函数。
 - **动态绑定**只有当我们通过指针或引用调用虚函数时才会发生。当通过一个具有普通类型（非引用非指针）的表达式调用虚函数时，在编译时就会将调用的版本确定下来。
 - **C++的多态性**:具有继承关系的多个类型称为*多态类型*，因为我们能使用这些类型的“多种形式”而无须在意它们的差异。引用或指针的静态类型与动态类型不同这一事实正是C++语言支持多态性的根本所在。
