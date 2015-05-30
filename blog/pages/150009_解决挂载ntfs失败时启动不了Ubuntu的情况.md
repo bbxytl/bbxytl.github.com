@@ -45,6 +45,7 @@ sudo mount -t ntfs /dev/sda7 /media/user-name/PorsenFile
 
 
 ##**附录**
+- **[博客园-Blog](http://bbxytl.github.io/)**
 - **[GitHub-Blog](http://bbxytl.github.io/)**
 - **关注微信订阅号**：     
     ![关注微信订阅号](./images/qrcodes/qrcode_100.jpg)
