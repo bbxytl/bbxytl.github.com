@@ -16,6 +16,8 @@
 12. [**Linux脚本学习笔记（一）**](./pages/7_Linux脚本学习笔记（一）.md#githubblog-)
 13. [**C++Primer学习笔记（二）**](./pages/8_C++Primer学习笔记（二）.md#githubblog-)
 14. [**解决挂载ntfs失败时启动不了Ubuntu的情况**](./pages/9_解决挂载ntfs失败时启动不了Ubuntu的情况.md#githubblog-)
+15. [**git多站点多用户情况下SSH配置**](./pages/10_git多站点多用户情况下SSH配置.md#githubblog-)
+16. [**CentOS7安装使用minimal模式记录**](./pages/11_CentOS7安装使用minimal模式记录.md#githubblog-)
 
 
 ##**友链**
