@@ -24,7 +24,10 @@
 - 给虚拟机安装增强功能：
 ```shell
 # Vbos的“设备->安装增强功能”
+~$ yum update kernel*
 ~$ yum -y install gcc make 	# 这个是用来防止运行过程中出现命令找不到的情况
+~$ yum -y upgrade kernel kernel-devel kernel-headers
+~$ reboot
 ~$ mkdir /media/cdrom	# 新建一个目录用来映射加载后的CD
 ~$ mount /dev/cdrom /media/cdrom
 ~$ export KERN_DIR=/usr/src/kernels/`uname -r`
