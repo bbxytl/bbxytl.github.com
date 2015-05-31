@@ -4,7 +4,8 @@
 ---
 
 安装使用 **minimal** 模式。安装后使用解决方案：
-- 安装完成后第一次使用不能上网，**ping**不通。解决方案：
+###**1. 安装完成后第一次使用不能上网，**ping**不通。解决方案：**
+---
 ```shell
 # 切换到**root**下输入命令：
 ~$ su  		# 回车后输入root密码
@@ -20,8 +21,9 @@
 ~$ ip addr 	# 此时可查看到已经有 IP 地址了。
 ~$ ping www.baidu.com			# 此时能 ping 通，yum install 命令可以使用了
 ```
-- 可查看：[如何设置CentOS 7获取动态及静态IP地址](http://www.ytyzx.net/index.php?title=%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AECentOS_7%E8%8E%B7%E5%8F%96%E5%8A%A8%E6%80%81%E5%8F%8A%E9%9D%99%E6%80%81IP%E5%9C%B0%E5%9D%80)
-- 给虚拟机安装增强功能：
+可查看：[如何设置CentOS 7获取动态及静态IP地址](http://www.ytyzx.net/index.php?title=%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AECentOS_7%E8%8E%B7%E5%8F%96%E5%8A%A8%E6%80%81%E5%8F%8A%E9%9D%99%E6%80%81IP%E5%9C%B0%E5%9D%80)
+###**2. 给虚拟机安装增强功能：**
+---
 ```shell
 # Vbos的“设备->安装增强功能”
 ~$ yum update kernel*
@@ -37,21 +39,79 @@
 ~$ reboot
 ~$ df  			# 查看是否挂载
 ```
-- 可查看:[centos mini安装virtualbox增强功能](http://blog.sina.com.cn/s/blog_7deb436e0101w8n9.html)
-- 安装 ifconfig 命令
+可查看:[centos mini安装virtualbox增强功能](http://blog.sina.com.cn/s/blog_7deb436e0101w8n9.html)
+###**3. 安装 ifconfig 命令**
+---
 ```shell
 # 正常使用命令： yum install ifconfig 后显示找不到包
 ~$ yum search ifconfig		# 查找包含 ifconfig 命令的包，正常结果是net-tools.x86_64
 ~$ yum install net-tools.x86_64	# 安装后即可使用 ifconfig
 ```
-- 使用 Xshell5 远程登陆 CentOS
-	- **下载链接：[http://pan.baidu.com/s/1gdpNseJ](http://pan.baidu.com/s/1gdpNseJ) 密码: ` ybkh `**
-	- 安装后新建一个会话，在CentOS中使用命令 `ip addr` 查看 ip 地址；
-	- 在新建的会话中填入 ip 地址，端口号默认使用 22 ;
-	- 确认后连接，输入用户名和密码即可连接；
-	- 具体可查看：[Xshell连接linux（图文教程）](http://jingyan.baidu.com/article/3a2f7c2e71f04d26afd611dc.html)
+###**4. 使用 Xshell5 远程登陆 CentOS**
+---
+- **下载链接：[http://pan.baidu.com/s/1gdpNseJ](http://pan.baidu.com/s/1gdpNseJ) 密码: ` ybkh `**
+- 安装后新建一个会话，在CentOS中使用命令 `ip addr` 查看 ip 地址；
+- 在新建的会话中填入 ip 地址，端口号默认使用 22 ;
+- 确认后连接，输入用户名和密码即可连接；
+- 具体可查看：[Xshell连接linux（图文教程）](http://jingyan.baidu.com/article/3a2f7c2e71f04d26afd611dc.html)
+
+###**5. 使用共享文件夹**
+---
+此功能的使用需要先安装 VBox的增强工具，具体查看**[第二部分](#2. 给虚拟机安装增强功能：)**。
+- 设置->共享文件夹->添加一个固定分配的共享文件夹（要在关机状态下才能设置，否则设置的是临时分配的，下次开机就没了~~），选中自动挂载。这里假如挂载的文件夹名是 **VBoxShare** 。
+- 重启后使用如下命令：
+```shell
+~$ sudo mkdir /mnt/WinShare		# 创建一个用于挂载的文件夹
+~$ cd /							# 切换到根目录
+~$ sudo mount -t vboxsf VBoxShare /mnt/WinShare	# 挂载
+# 在当前用户目录下建立一个软链接
+~$ ln -s /mnt/WinShare /home/yourusername/WinShare	
+~$ ls							# 查看是否成功
+```
 
 
+###**6. 使用 tar 命令**
+---
+使用 tar 命令解压时默认要先切换到要解压文件的所在目录下。否则会出错！如**[“Cannot open: No such file or directory” when extracting a tar file](http://askubuntu.com/questions/486264/cannot-open-no-such-file-or-directory-when-extracting-a-tar-file)**。
+
+###**7. 配置Vim**
+---
+首先在minimal模式下默认并没有安装 vim ，只有 vi。所以要先进行安装：
+```shell
+~$ yum -y install vim
+```
+####7.1 给**vim**添加中文帮助文档：
+```shell
+# 使用 wget 命令 下载中文帮助文档 -O 选项用来重命名要下载的文件
+~$ wget -O /home/viki/WinShare/vimdoczh.tar.gz http://sourceforge.net/projects/vimcdoc/files/vimcdoc/1.8.0/vimcdoc-1.8.0.tar.gz/download
+~$ cd /home/viki/WinShare
+~$ ls
+vimdoczh.tar.gz
+~$ tar -zxvf vimdoczh.tar.gz		# 参考 第 6 条
+~$ ls
+vimcdoc-1.8.0 vimdoczh.tar.gz
+# 首先查看刚才安装的 vim 安装目录
+~$ whereis vim
+vim: /usr/bin/vim /usr/share/vim /usr/share/man/man1/vim.1.gz
+~$ sudo cp -r vimcdoc-1.8.0/doc /usr/share/vim/vimfiles/
+~$ cd 			# 切换到用户目录
+~$ vim .vimrc	# 打开 .vimrc 配置文件，如果原来没有则会新建
+# 打开后按 'i' 插入如下内容：
+set helplang=cn
+set encoding=utf-8
+# 按 ':x' 保存退出
+~$ vim
+# 按 :help 可查看帮助文档，此时已经为中文！
+```
+####7.2 更改默认 Tab 缩进长度，由 8 改为 4
+```shell
+~$ cd 			# 切换到用户目录
+~$ vim .vimrc	# 打开 .vimrc 配置文件，如果原来没有则会新建
+# 打开后按 'i' 插入如下内容：
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+```
 
 
 
