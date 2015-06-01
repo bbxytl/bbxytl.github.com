@@ -26,8 +26,8 @@
 ---
 ```shell
 # Vbos的“设备->安装增强功能”
-~$ yum update kernel*
-~$ yum -y install gcc make kernel-devel	# 这个是用来防止运行过程中出现命令找不到的情况
+~$ yum -y update kernel*
+~$ yum -y install bzip2 gcc make kernel-devel	# 这个是用来防止运行过程中出现命令找不到的情况
 ~$ yum -y upgrade kernel kernel-devel kernel-headers
 ~$ reboot
 ~$ mkdir /media/cdrom	# 新建一个目录用来映射加载后的CD
@@ -40,13 +40,16 @@
 ~$ df  			# 查看是否挂载
 ```
 可查看:[centos mini安装virtualbox增强功能](http://blog.sina.com.cn/s/blog_7deb436e0101w8n9.html)
-###**3. 安装 ifconfig 命令**
+###**3. 给非root用户添加使用 sudo 的权限**
 ---
 ```shell
-# 正常使用命令： yum install ifconfig 后显示找不到包
-~$ yum search ifconfig		# 查找包含 ifconfig 命令的包，正常结果是net-tools.x86_64
-~$ yum install net-tools.x86_64	# 安装后即可使用 ifconfig
+~$ su		# 切换到 root 账号
+~$ vi /etc/sudoers
+# 打开后找到这一行： root    ALL=(ALL)       ALL
+# 在下面添加一行： yourusername ALL=(ALL)       ALL
+# 需要添加几个账号就添加几个。然后切换到 yourusername 下就可以使用 sudo 了
 ```
+
 ###**4. 使用 Xshell5 远程登陆 CentOS**
 ---
 - **下载链接：[http://pan.baidu.com/s/1gdpNseJ](http://pan.baidu.com/s/1gdpNseJ) 密码: ` ybkh `**
@@ -70,9 +73,23 @@
 ```
 
 
-###**6. 使用 tar 命令**
+###**6. 使用命令 **
 ---
+- **安装 ifconfig 命令**
+```shell
+# 正常使用命令： yum install ifconfig 后显示找不到包
+~$ yum search ifconfig		# 查找包含 ifconfig 命令的包，正常结果是net-tools.x86_64
+~$ yum install net-tools.x86_64	# 安装后即可使用 ifconfig
+```
+- **使用 tar 命令**
 使用 tar 命令解压时默认要先切换到要解压文件的所在目录下。否则会出错！如**[“Cannot open: No such file or directory” when extracting a tar file](http://askubuntu.com/questions/486264/cannot-open-no-such-file-or-directory-when-extracting-a-tar-file)**。
+- **安装 locate 命令**
+```shell
+~$ yum search locate	# 查找包 这里查找到： mlocate.x86_64
+~$ yum install mlocate.x86_64
+# locate 是在文件索引数据库中查找，所以有时需要更新文件索引数据库
+~$ updatedb 	# 更新数据库 ， 需要 root 权限
+```
 
 ###**7. 配置Vim**
 ---
@@ -93,13 +110,9 @@ vimcdoc-1.8.0 vimdoczh.tar.gz
 # 首先查看刚才安装的 vim 安装目录
 ~$ whereis vim
 vim: /usr/bin/vim /usr/share/vim /usr/share/man/man1/vim.1.gz
-~$ sudo cp -r vimcdoc-1.8.0/doc /usr/share/vim/vimfiles/
-~$ cd 			# 切换到用户目录
-~$ vim .vimrc	# 打开 .vimrc 配置文件，如果原来没有则会新建
-# 打开后按 'i' 插入如下内容：
-set helplang=cn
-set encoding=utf-8
-# 按 ':x' 保存退出
+~$ su			# 切换到 root 
+~$ cd vimcdoc-1.8.0
+~$ sh vimcdoc.sh -i		# '-i' 表示安装并配置 中文 文档
 ~$ vim
 # 按 :help 可查看帮助文档，此时已经为中文！
 ```

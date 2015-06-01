@@ -18,9 +18,13 @@
 14. [**解决挂载ntfs失败时启动不了Ubuntu的情况**](./pages/150009_解决挂载ntfs失败时启动不了Ubuntu的情况.md#githubblog-)
 15. [**git多站点多用户情况下SSH配置**](./pages/150529_git多站点多用户情况下SSH配置.md#githubblog-)
 16. [**CentOS7安装使用minimal模式记录**](./pages/150530_CentOS7安装使用minimal模式记录.md#githubblog-)
+17. [**SSH学习记录**](./pages/150601_SSH学习记录.md#githubblog-)
 
 
-##**友链**
-- [**博客园-Blog**](http://www.cnblogs.com/lomper/)
+
+##**附录**
+- **[博客园-Blog](http://bbxytl.github.io/)**
+- **[GitHub-Blog](http://bbxytl.github.io/)**
 - **关注微信订阅号：LomperWay**：     
-	![](./pages/images/qrcodes/qrcode_100.jpg)
+    ![关注微信订阅号](./pages/images/qrcodes/qrcode_100.jpg)
+
