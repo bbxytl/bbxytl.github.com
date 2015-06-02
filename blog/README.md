@@ -19,6 +19,7 @@
 15. [**git多站点多用户情况下SSH配置**](./pages/150529_git多站点多用户情况下SSH配置.md#githubblog-)
 16. [**CentOS7安装使用minimal模式记录**](./pages/150530_CentOS7安装使用minimal模式记录.md#githubblog-)
 17. [**SSH学习记录**](./pages/150601_SSH学习记录.md#githubblog-)
+18. [**Python学习记录**](./pages/150602_Python学习记录.md#githubblog-)
 
 
 
