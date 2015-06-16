@@ -190,6 +190,39 @@ alias cman='man -M /usr/local/zhman/share/man/zh_CN'
 ~$ cman cd			# 查看是否成功，如果要使用英文版，可继续使用 man 命令 
 ```
 
+### 9 安装 Tmux
+可使用如下命令一键安装：
+```shell
+sudo yum install ncurses-devel
+
+git clone git://levent.git.sourceforge.net/gitroot/levent/libevent
+cd libevent
+sudo sh autogen.sh
+./configure
+make
+make verify
+sudo make install
+
+sudo yum install autoconf m4 perl automake
+sudo autoreconf -ivf
+
+git clone git://git.code.sf.net/p/tmux/tmux-code tmux
+cd tmux
+sh autogen.sh
+./configure && make
+sudo make install
+```
+执行 tmux 后如有如下报错：
+`libevent-2.0.so.5: cannot open shared object file: No such file or directory`
+如果是 32 位系统则运行：
+```shell
+ln -s /usr/local/lib/libevent-2.0.so.5 /usr/lib/libevent-2.0.so.5
+```
+如果是 64 位系统则运行：
+```shell
+ln -s /usr/local/lib/libevent-2.0.so.5 /usr/lib64/libevent-2.0.so.5
+```
+
 ##**附录**
 - **[博客园-Blog](http://bbxytl.github.io/)**
 - **[GitHub-Blog](http://bbxytl.github.io/)**
