@@ -95,15 +95,17 @@ CentOS7中安装命令需要使用 sudo ：
 ~$ updatedb 	# 更新数据库 ， 需要 root 权限
 ```
 - **6.4 按照 CMake 命令**
+
 ```shell
 # CentOS7 中使用下面的指令按照 cmake :
 ~$ yum install cmake
 ~$ cmake --version
 cmake version 2.8.11
 ```
-	-  这里默认安装的是 2.8.11 的版本，版本太低了，官网已经都到 3.x 系列了，所以更新一下：
-	- 到**[官网](http://www.cmake.org/download/)**去下载最新的 cmake 压缩包，比如：cmake-3.2.3.tar.gz 
-	- 解压到任意文件夹下，运行以下指令：(运行方法在 解压后目录下的 README.rst（MarkDown文件） 文件里，可打开查看)
+
+这里默认安装的是 2.8.11 的版本，版本太低了，官网已经都到 3.x 系列了，所以更新一下：
+到**[官网](http://www.cmake.org/download/)**去下载最新的 cmake 压缩包，比如：cmake-3.2.3.tar.gz 
+解压到任意文件夹下，运行以下指令：(运行方法在 解压后目录下的 README.rst（MarkDown文件） 文件里，可打开查看)
 ```shell
 ~$ ./bootstrap 
 ~$ make 
@@ -112,7 +114,9 @@ cmake version 2.8.11
 ~$ cmake --version
 cmake version 3.2.3
 ```
-	- 可能会出现 无法创建文件夹的情况，记得用 sudo 就好。时间比较长~~~
+
+可能会出现 无法创建文件夹的情况，记得用 sudo 就好。时间比较长~~~
+
 - **6.5 安装 pip 命令**
 ```shell
 ~$ rpm -iUvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
