@@ -94,10 +94,10 @@ CentOS7中安装命令需要使用 sudo ：
 # locate 是在文件索引数据库中查找，所以有时需要更新文件索引数据库
 ~$ updatedb 	# 更新数据库 ， 需要 root 权限
 ```
-- **6.4 按照 CMake 命令**
+- **6.4 安装 CMake 命令**
 
 ```shell
-# CentOS7 中使用下面的指令按照 cmake :
+# CentOS7 中使用下面的指令安装 cmake :
 ~$ yum install cmake
 ~$ cmake --version
 cmake version 2.8.11
