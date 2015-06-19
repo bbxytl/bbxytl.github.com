@@ -223,6 +223,32 @@ ln -s /usr/local/lib/libevent-2.0.so.5 /usr/lib/libevent-2.0.so.5
 ln -s /usr/local/lib/libevent-2.0.so.5 /usr/lib64/libevent-2.0.so.5
 ```
 
+### 10 修改 系统时区和时间
+- 修正时区
+```shell
+rm -rf /etc/localtime    #删除当前默认时区www.kwx.gd
+ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 
+#复制替换默认时区为上海
+```
+- SSH执行以上命令，将VPS时区修改为中国上海的时区，当然，也可以设置中国香港或北京的时间。可到 `/usr/share/zoneinfo/Asia/` 目录去查看香港和北京的拼写。
+
+- 手动修正时间
+```shell
+date -s '09:16:00 2013-01-21' 
+```
+- 使用“date”命令，修改时间和日期为2013年1月21日，时间是上午9点16分0秒。
+
+
+- 时间自动同步和校正
+```shell
+yum install -y ntp        #安装时间同步服务（组件）
+ntpdate us.pool.ntp.org   #设置同步服务器
+date                      #查看当前时间www.kwx.gd
+```
+- 部分系统已经安装了NTP服务，系统会根据当前记录的时区（第一步操作）自动连接ntp服务器校正时间。
+
+
+
 ##**附录**
 - **[博客园-Blog](http://bbxytl.github.io/)**
 - **[GitHub-Blog](http://bbxytl.github.io/)**
