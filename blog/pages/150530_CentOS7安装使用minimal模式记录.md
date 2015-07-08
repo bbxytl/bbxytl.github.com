@@ -250,7 +250,7 @@ date                      #查看当前时间www.kwx.gd
 
 
 ##**附录**
-- **[博客园-Blog](http://bbxytl.github.io/)**
+- **[博客园-Blog](http://www.cnblogs.com/lomper/)**
 - **[GitHub-Blog](http://bbxytl.github.io/)**
 - **关注微信订阅号：LomperWay**：     
     ![关注微信订阅号](./images/qrcodes/qrcode_100.jpg)
