@@ -57,50 +57,68 @@ cp <mongodb/bin-path>/mongo bin/
 
 - 创建 数据库
 ```shell
-use imooc
+> use imooc
 ```
 
 - 插入与查询
 ```shell
-db.imooc_collection.insert({x:1})   # 插入一条数据
-show dbs                    # 显示所有数据库，一个数据库没有数据时，show不出来
-db.imooc_collection.find()  # 查看所有数据
+> db.imooc_collection.insert({x:1})   # 插入一条数据
+# 可以使用batchInsert函数实现批量插入，它与insert函数非常像，
+# 只是它接受的是一个文档数组作为参数； 在批量插入中遇到错误时，
+# 如果希望batchInsert忽略错误并且继续执行后续插入，
+# 可以使用continueOnError选项
+> db.foo.batchInsert([{"_id" : 0}, {"_id" : 1}, {"_id" : 2}]) 
+> show dbs                    # 显示所有数据库，一个数据库没有数据时，show不出来
+> db.imooc_collection.find()  # 查看所有数据
 # 一条数据有一个 "_id", 不能重复！
-db.imooc_collection.find().count() # 对查询的数据计数
+> db.imooc_collection.find().count() # 对查询的数据计数
 # 对查询结果跳过前 3 行，限制之输出两行，以key=x进行排序，排序方式（1:正序,-1:倒序）
-db.imooc_collection.find().spikp(3).limit(2).sort({x:1})
+> db.imooc_collection.find().spikp(3).limit(2).sort({x:1})
+# "$push"会向已有的数组末尾加入一个元素，要是没有就创建一个新的数组。
+> db.blog.posts.update({"title" : "A blog post"},
+... {"$push" : {"comments" :
+...    {"name" : "joe", "email" : "joe@example.com",
+...    "content" : "nice post."}}})
 ```
 
 - 更新
 ```shell
 # 将 x 为 1 更新为 999
-db.imooc_collection.update({x:1},{x:999})
-db.imooc_collection.insert({x:100, y:100, z:100})
+> db.imooc_collection.update({x:1},{x:999})
+> db.imooc_collection.insert({x:100, y:100, z:100})
 # 要更新 y 为 99 ， 不能使用上面的方法，因为这是一条数据，相当于一个词典，会直接替换掉，
 # 要更新部分内容，使用 $set 操作符，内容存在的会被更新，不存在的保持原样，如下面的方式：
-db.imooc_collection.update({z:100}, {$set:{y:99}})
-db.imooc_collection.find({z:100}) # 此时已正常更新
+> db.imooc_collection.update({z:100}, {$set:{y:99}})
+> db.imooc_collection.find({z:100}) # 此时已正常更新
 ```
 
 - 更新不存在的数据
 ```shell
 # 使用 update的第三个参数来指定是否要在查找失败的情况下插入数据
-db.imooc_collection.update({c:1}, {c:2}, true)
+> db.imooc_collection.update({c:1}, {c:2}, true)
+> db.games.update({"game" : "pinball", "user" : "joe"},
+... {"$inc" : {"score" : 10000}})
 ```
+"$inc"与"$set"的用法类似，就是专门来增加（和减少）数字的。
+"$inc"只能用于整型、长整型或双精度浮点型的值。
+要是用在其他类型的数据上就会导致操作失败，
+例如null、布尔类型以及数字构成的字符串，
+而在其他很多语言中，这些类型都会自动转换为数值类型。
+要修改其他类型，应该使用"$set"或者数组修改器。
 
 - 更新多条数据
 ```shell
 # 默认情况下如果有多条数据存在，只会更新第一条，其他的不动
 # 如果想全部更新，需要使用 $set 操作符
-db.imooc_collection.update({c:1},{$set:{c:2}},false, true)
+> db.imooc_collection.update({c:1},{$set:{c:2}},false, true)
 ```
 
 - 删除操作
 ```shell
 # 默认情况下 删除操作不允许不传参数，同时删除操作默认删除所有查找到的数据
-db.imooc_collection.remove({c:2})
+> db.imooc_collection.remove({c:2})
 # 对于某张表使用删除： drop()
-db.imooc_collection.drop()
+> db.imooc_collection.drop()
 ```
 
 ### 索引
@@ -108,20 +126,20 @@ db.imooc_collection.drop()
 
 - 查看索引
 ```shell
-db.imooc_collection.getIndexes()
+> db.imooc_collection.getIndexes()
 ```
 
 - 创建索引
 ```shell
 # 在数据文档比较多的情况下，不能使用这个命令，应在创建数据库时就创建好索引，
 # 否则会严重影响数据库性能
-db.imooc_collection.ensureIndex({x:1})
+> db.imooc_collection.ensureIndex({x:1})
 ```
 
 - 创建一个过期索引
 ```shell
 # 使用如下数据，expireAfterSeconds 指定过期时间
-db.imooc_collection.ensureIndex({time:1}, {expireAfterSeconds:30})
+> db.imooc_collection.ensureIndex({time:1}, {expireAfterSeconds:30})
 ```
 > 1. 存储在过期索引字段的值必须是指定的时间类型：必须是ISODate或者ISODate数组，不能使用时间戳，否则不能被自动删除；
 > 2. 如果指定了ISODate数组，则按照最小的时间进行删除；
@@ -131,27 +149,27 @@ db.imooc_collection.ensureIndex({time:1}, {expireAfterSeconds:30})
 - 创建全文索引
 ```shell
 # 和之前的创建索引相同，但是 value 使用 "text" 来表示在字段 key 上创建一个全文索引
-db.imooc_collection.ensureIndex({key:"text"})
-db.imooc_collection.ensureIndex({key1:"text",key2:"text"})
+> db.imooc_collection.ensureIndex({key:"text"})
+> db.imooc_collection.ensureIndex({key1:"text",key2:"text"})
 # 表示对集合中所有字段创建一个大的全文索引
-db.imooc_collection.ensureIndex({"$**":"text"})
+> db.imooc_collection.ensureIndex({"$**":"text"})
 ```
 
 - 使用全文索引进行查询
 ```shell
-db.imooc_collection.find({$text:{$search:"coffee"}})
-db.imooc_collection.find({$text:{$search:"aa bb cc"}})
-db.imooc_collection.find({$text:{$search:"aa bb -dd"}}) # 加 - 号说明不包含 dd
-db.imooc_collection.find({$text:{$search:"\"aa\" bb cc"}})
+> db.imooc_collection.find({$text:{$search:"coffee"}})
+> db.imooc_collection.find({$text:{$search:"aa bb cc"}})
+> db.imooc_collection.find({$text:{$search:"aa bb -dd"}}) # 加 - 号说明不包含 dd
+> db.imooc_collection.find({$text:{$search:"\"aa\" bb cc"}})
 ```
 
 - 全文索引的相似度
 `$meta`操作符: `{socre: {$meta:"textScore"}}`
 写在查询条件后面可以返回返回结果的相似度，与 sort 一起使用，可以达到很好的实用效果。
 ```shell
-db.imooc_collection.find({$text:{$search:"aa bb"}}, {socre:{$meta:"textScore"}})
+> db.imooc_collection.find({$text:{$search:"aa bb"}}, {socre:{$meta:"textScore"}})
 # 可以根据相似度对返回结果进行排序
-db.imooc_collection.find({$text:{$search:"aa bb"}}, {socre:{$meta:"textScore"}}).sort({socre:{$meta:"textScore"}})
+> db.imooc_collection.find({$text:{$search:"aa bb"}}, {socre:{$meta:"textScore"}}).sort({socre:{$meta:"textScore"}})
 ```
 
 - 全文索引的使用限制
@@ -159,6 +177,30 @@ db.imooc_collection.find({$text:{$search:"aa bb"}}, {socre:{$meta:"textScore"}})
     - `$text` 查询不能出现在 `$nor` 查询中
     - 查询中如果包含了 `$text` ，hint 不在起作用
     - MongoDB全文索引还不支持中文
+
+
+### 副本集
+---
+创建副本集和上面的初始化相同，只是 mongod.conf 文件内容如下：
+```shell
+bind_ip = 192.168.xxx.xxx
+port = 20001
+dbpath = data
+logpath = log/mongod.log
+fork = true
+replSet = rset_name
+``` 
+最后一句很重要，`rset_name` 为 建立的副本集名称。
+当在两台电脑上进行配置时，可能会出现 `"stateStr" : "(not reachable/healthy)",`错误，解决方法：
+```shell
+service iptables stop
+iptables -F
+```
+同时，保证要能 `ping` 通。
+
+
+### 使用过程中的问题
+---
 
 
 
