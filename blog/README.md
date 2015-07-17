@@ -24,6 +24,7 @@
 20. **[Python学习记录（二）](https://github.com/bbxytl/bbxytl.github.com/blob/master/blog/pages/150609_Python学习记录（二）.md#githubblog-)**
 21. **[Pike 学习中的简单记录](https://github.com/bbxytl/bbxytl.github.com/blob/master/blog/pages/150623_Pike学习中的简单记录.md#githubblog-)**
 22. **[mongodb 学习记录](https://github.com/bbxytl/bbxytl.github.com/blob/master/blog/pages/150708_mongodb学习记录.md#githubblog-)**
+23. **[mongodb的C++Driver安装使用](https://github.com/bbxytl/bbxytl.github.com/blob/master/blog/pages/150716_mongodb的C++Driver安装使用.md#githubblog-)**
 
 
 

@@ -1,6 +1,6 @@
 [GitHubBlog](https://github.com/bbxytl/bbxytl.github.com/tree/master/blog#home--githubblog) /
 =====
-# [mongodb 学习记录](https://github.com/bbxytl/bbxytl.github.com/blob/master/blog/pages/150708_mongodb学习记录.md#githubblog-)
+# [mongodb的C++Driver安装使用](https://github.com/bbxytl/bbxytl.github.com/blob/master/blog/pages/150716_mongodb的C++Driver安装使用.md#githubblog-)
 ---
  
 在CentOS上使用 `C++ driver` 时需要先安装 `c driver` 和 `libson`，过程比较多，整理了以下脚本：
