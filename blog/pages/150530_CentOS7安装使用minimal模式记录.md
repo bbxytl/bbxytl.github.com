@@ -195,9 +195,9 @@ alias cman='man -M /usr/local/zhman/share/man/zh_CN'
 ```shell
 sudo yum install ncurses-devel
 
-git clone git://levent.git.sourceforge.net/gitroot/levent/libevent
-cd libevent
-sudo sh autogen.sh
+wget http://sourceforge.net/projects/levent/files/libevent/libevent-2.0/libevent-2.0.22-stable.tar.gz
+tar -xzvf libevent-2.0.22-stable.tar.gz
+cd libevent-2.0.22-stable
 ./configure
 make
 make verify
@@ -206,7 +206,7 @@ sudo make install
 sudo yum install autoconf m4 perl automake
 sudo autoreconf -ivf
 
-git clone git://git.code.sf.net/p/tmux/tmux-code tmux
+git clone https://github.com/tmux/tmux.git
 cd tmux
 sh autogen.sh
 ./configure && make
@@ -247,7 +247,17 @@ date                      #查看当前时间www.kwx.gd
 ```
 - 部分系统已经安装了NTP服务，系统会根据当前记录的时区（第一步操作）自动连接ntp服务器校正时间。
 
+### 11 CentOS6.x "Cannot retrieve metalink for repository: epel" Error
+---
+这个错误只会出现在 6.x 系列里，在 5.8和 7 里没有这个问题。解决方法是：
+```shell
+sudo sed -i "s/mirrorlist=https/mirrorlist=http/" /etc/yum.repos.d/epel.repo
+# 可使用 yum 检查一下是否可用
+yum check-update
+```
+> [CentOS 6.3 Instance Giving "Cannot retrieve metalink for repository: epel" Error][1]
 
+[1]: https://community.hpcloud.com/article/centos-63-instance-giving-cannot-retrieve-metalink-repository-epel-error
 
 ##**附录**
 - **[博客园-Blog](http://www.cnblogs.com/lomper/)**
