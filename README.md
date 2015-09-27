@@ -1,9 +1,9 @@
 [**Home**](http://bbxytl.github.io) /   
-[**Welcome to My Blog**](_myblog2)
+[**Welcome to My Blog**][_myblog2]
 =================
 # Introduction
 This is my blog.
-# [About me](_about_me)
+# [About me][_about_me]
 
 
 [_myblog1]: https://github.com/bbxytl/bbxytl.github.com/blob/master/blog/README.md#home--githubblog
