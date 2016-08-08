@@ -13,6 +13,6 @@
 [_blog_github]: https://github.com/bbxytl/bbxytl.github.com/blob/master/blog/README.md#home--githubblog
 [_about_me]: https://github.com/bbxytl/bbxytl.github.com/tree/master/blog/pages/pro/About_Me.md#about-me
 
-[_blog]:http://www.jianshu.com/users/3daf1e252909/timeline
+[_blog]:http://www.jianshu.com/users/3daf1e252909/latest_articles
 [_github]: http://github.com/bbxytl
 [_cnblog]: http://www.cnblogs.com/lomper
